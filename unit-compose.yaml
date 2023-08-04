@@ -1,8 +1,8 @@
-version: '3.9'
-
 services:
 
   unit:
-    container_name: unit
+    container_name: unit-openapi
     image: unit:1.30.0-minimal
-
+    ports:
+      - 8765:8765
+      - 8080:8080
